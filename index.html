@@ -2,7 +2,35 @@
 
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Info Card</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-<!-- Your HTML Here -->
+    <body>
+        <div class="card">
+            <div class="card-header">
+                <h1>Nina Nguyen</h1>
+                <h2>Major: Computer Science | Year: Junior</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>Passionate about:</strong> Using technology to improve education access.</p>
+                <p><strong>From:</strong> Atlanta, GA</p>
+            </div>
+            <div class="card-footer">
+                <button onclick="toggleDetails()">More About Me</button>
+                <div id="extra-details" class="hidden">
+                    <p>Personal Interests: Pickleball, Cooking, Music</p>
+                    <p>Organizations: Vietnamese Student Association, GT Design Club, Girls Who Code</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleDetails() {
+                const details = document.getElementById('extra-details');
+                details.classList.toggle('hidden');
+            }
+        </script>
+    </body>
+
 </html>

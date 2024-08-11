@@ -1,3 +1,71 @@
 /* Your Styles Here */
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-header h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #777;
+}
+
+.card-body p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card-footer {
+    margin-top: 20px;
+}
+
+.card-footer button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.card-footer button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+#extra-details {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
 }
